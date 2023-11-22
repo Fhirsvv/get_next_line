@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edu <edu@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: ecortes- <ecortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 15:43:12 by ecortes-          #+#    #+#             */
-/*   Updated: 2023/10/05 10:15:54 by edu              ###   ########.fr       */
+/*   Updated: 2023/11/22 18:29:32 by ecortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
 
 char	*get_next_line(int fd);
 char	*ft_strjoin(char *s1, char *s2);
